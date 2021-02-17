@@ -75,33 +75,19 @@ class ScheduleView: UIViewController {
             configureScrollView()
         }
     }
-    
     private func configureScrollView(){
-        let tableView: UITableView = {
-            let tableView = UITableView()
-            tableView.frame = view.bounds
-            tableView.backgroundColor = #colorLiteral(red: 0.7570065856, green: 0.7925702929, blue: 0.4755898118, alpha: 1)
-//            tableView.register(UITableViewCell.self, forCellReuseIdentifier: "scheduleCell")
-            return tableView
-        }()
-        let tableView1: UITableView = {
-            let tableView = UITableView()
-            tableView.frame = view.bounds
-            tableView.backgroundColor = #colorLiteral(red: 0.7570065856, green: 0.7925702929, blue: 0.4755898118, alpha: 1)
-//            tableView.register(UITableViewCell.self, forCellReuseIdentifier: "scheduleCell")
-            return tableView
-        }()
-        let tableView2: UITableView = {
-            let tableView = UITableView()
-            tableView.frame = view.bounds
-            tableView.backgroundColor = #colorLiteral(red: 0.7570065856, green: 0.7925702929, blue: 0.4755898118, alpha: 1)
-//            tableView.register(UITableViewCell.self, forCellReuseIdentifier: "scheduleCell")
-            return tableView
-        }()
         scrollView.contentSize = CGSize(width: view.frame.width * 3, height: scrollView.frame.height)
         scrollView.isPagingEnabled = true
         
         for x in 0..<3{
+            let tableView: UITableView = {
+                let tableView = UITableView()
+                tableView.backgroundColor = #colorLiteral(red: 0.7570065856, green: 0.7925702929, blue: 0.4755898118, alpha: 1)
+                tableView.frame = view.bounds
+        //            tableView.register(UITableViewCell.self, forCellReuseIdentifier: "scheduleCell")
+                return tableView
+            }()
+            
             let page = UIView(frame: CGRect(x: CGFloat(x) * view.frame.size.width, y: 0, width: view.frame.size.width, height: scrollView.frame.size.height))
             
             if x == 0 {
@@ -117,11 +103,11 @@ class ScheduleView: UIViewController {
             }
             if x == 1 {
                 fri = page
-                friDesign(tableView: tableView1)
+                friDesign(tableView: tableView)
             }
             if x == 2 {
                 sat = page
-                satDesign(tableView: tableView2)
+                satDesign(tableView: tableView)
             }
             scrollView.addSubview(page)
         }
