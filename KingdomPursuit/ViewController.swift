@@ -1,4 +1,3 @@
-//
 //  ViewController.swift
 //  KingdomPursuit
 //
@@ -7,13 +6,23 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
-
-
 }
 
+class PersonView: UIViewController {
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    var name = ""
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        nameLabel.text = name
+    }
+}

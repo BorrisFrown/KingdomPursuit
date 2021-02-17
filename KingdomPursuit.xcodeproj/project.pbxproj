@@ -3,10 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A91246B0770DBD47A83B1A4 /* Pods_KingdomPursuit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E4E78BD42C9A8F49DCCDF8 /* Pods_KingdomPursuit.framework */; };
+		4432183AF7C80BB274072E9F /* Pods_KingdomPursuit_KingdomPursuitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19727AA7520EE6A9FF5E958 /* Pods_KingdomPursuit_KingdomPursuitUITests.framework */; };
+		AE494C8E25BB77C400D92D10 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE494C8D25BB77C400D92D10 /* GoogleService-Info.plist */; };
+		AE494C9425C2107000D92D10 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE494C9225C2107000D92D10 /* TableViewCell.swift */; };
+		AE494C9525C2107000D92D10 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE494C9325C2107000D92D10 /* TableViewCell.xib */; };
+		B8E836C05EC554A3A7D9F507 /* Pods_KingdomPursuitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 709D7BAE43711B13E4820293 /* Pods_KingdomPursuitTests.framework */; };
+		D662922125B8AB170049DAEE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D662922025B8AB170049DAEE /* HomeView.swift */; };
+		D662922625B8AB880049DAEE /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D662922525B8AB880049DAEE /* ScheduleView.swift */; };
+		D662923125B8B1130049DAEE /* SpeakersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D662923025B8B1130049DAEE /* SpeakersView.swift */; };
+		D662923925B8B29A0049DAEE /* WorshipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D662923825B8B29A0049DAEE /* WorshipView.swift */; };
+		D662923E25B8B32C0049DAEE /* BreakoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D662923D25B8B32C0049DAEE /* BreakoutsView.swift */; };
 		D6746B0F258AAE7800F155AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6746B0E258AAE7800F155AB /* AppDelegate.swift */; };
 		D6746B11258AAE7800F155AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6746B10258AAE7800F155AB /* SceneDelegate.swift */; };
 		D6746B13258AAE7800F155AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6746B12258AAE7800F155AB /* ViewController.swift */; };
@@ -15,6 +26,9 @@
 		D6746B1B258AAE9300F155AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6746B19258AAE9300F155AB /* LaunchScreen.storyboard */; };
 		D6746B26258AAE9400F155AB /* KingdomPursuitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6746B25258AAE9400F155AB /* KingdomPursuitTests.swift */; };
 		D6746B31258AAE9400F155AB /* KingdomPursuitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6746B30258AAE9400F155AB /* KingdomPursuitUITests.swift */; };
+		D6F3F6A2259FE261008A42A3 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F3F6A0259FE261008A42A3 /* MyCollectionViewCell.swift */; };
+		D6F3F6A3259FE261008A42A3 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6F3F6A1259FE261008A42A3 /* MyCollectionViewCell.xib */; };
+		D6F3F6CA25A7ABE4008A42A3 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F3F6C925A7ABE4008A42A3 /* PeopleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +49,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F6A19315B3831F0A94C5238 /* Pods-KingdomPursuitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingdomPursuitTests.release.xcconfig"; path = "Target Support Files/Pods-KingdomPursuitTests/Pods-KingdomPursuitTests.release.xcconfig"; sourceTree = "<group>"; };
+		103159B1F4BC1DF5938DA8C7 /* Pods-KingdomPursuit-KingdomPursuitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingdomPursuit-KingdomPursuitUITests.debug.xcconfig"; path = "Target Support Files/Pods-KingdomPursuit-KingdomPursuitUITests/Pods-KingdomPursuit-KingdomPursuitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		199A2A84BE5B2A68B61B67BC /* Pods-KingdomPursuitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingdomPursuitTests.debug.xcconfig"; path = "Target Support Files/Pods-KingdomPursuitTests/Pods-KingdomPursuitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E029C57ED13C1E1D2FB1F5A /* Pods-KingdomPursuit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingdomPursuit.release.xcconfig"; path = "Target Support Files/Pods-KingdomPursuit/Pods-KingdomPursuit.release.xcconfig"; sourceTree = "<group>"; };
+		4F70C37B3DAF2B0FEC5A20C0 /* Pods-KingdomPursuit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingdomPursuit.debug.xcconfig"; path = "Target Support Files/Pods-KingdomPursuit/Pods-KingdomPursuit.debug.xcconfig"; sourceTree = "<group>"; };
+		59E4E78BD42C9A8F49DCCDF8 /* Pods_KingdomPursuit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KingdomPursuit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		709D7BAE43711B13E4820293 /* Pods_KingdomPursuitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KingdomPursuitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE494C8D25BB77C400D92D10 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		AE494C9225C2107000D92D10 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		AE494C9325C2107000D92D10 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		B19727AA7520EE6A9FF5E958 /* Pods_KingdomPursuit_KingdomPursuitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KingdomPursuit_KingdomPursuitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D662922025B8AB170049DAEE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D662922525B8AB880049DAEE /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		D662923025B8B1130049DAEE /* SpeakersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakersView.swift; sourceTree = "<group>"; };
+		D662923825B8B29A0049DAEE /* WorshipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorshipView.swift; sourceTree = "<group>"; };
+		D662923D25B8B32C0049DAEE /* BreakoutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakoutsView.swift; sourceTree = "<group>"; };
 		D6746B0B258AAE7800F155AB /* KingdomPursuit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KingdomPursuit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6746B0E258AAE7800F155AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6746B10258AAE7800F155AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +79,10 @@
 		D6746B2C258AAE9400F155AB /* KingdomPursuitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KingdomPursuitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6746B30258AAE9400F155AB /* KingdomPursuitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingdomPursuitUITests.swift; sourceTree = "<group>"; };
 		D6746B32258AAE9400F155AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6F3F6A0259FE261008A42A3 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		D6F3F6A1259FE261008A42A3 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
+		D6F3F6C925A7ABE4008A42A3 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		EB1F9A7AB272FD9CF29DD3AA /* Pods-KingdomPursuit-KingdomPursuitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingdomPursuit-KingdomPursuitUITests.release.xcconfig"; path = "Target Support Files/Pods-KingdomPursuit-KingdomPursuitUITests/Pods-KingdomPursuit-KingdomPursuitUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A91246B0770DBD47A83B1A4 /* Pods_KingdomPursuit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8E836C05EC554A3A7D9F507 /* Pods_KingdomPursuitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +106,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4432183AF7C80BB274072E9F /* Pods_KingdomPursuit_KingdomPursuitUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7174C89216D74F181A5A2261 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59E4E78BD42C9A8F49DCCDF8 /* Pods_KingdomPursuit.framework */,
+				B19727AA7520EE6A9FF5E958 /* Pods_KingdomPursuit_KingdomPursuitUITests.framework */,
+				709D7BAE43711B13E4820293 /* Pods_KingdomPursuitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF930D0B27CC9CE01B04A6FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F70C37B3DAF2B0FEC5A20C0 /* Pods-KingdomPursuit.debug.xcconfig */,
+				2E029C57ED13C1E1D2FB1F5A /* Pods-KingdomPursuit.release.xcconfig */,
+				103159B1F4BC1DF5938DA8C7 /* Pods-KingdomPursuit-KingdomPursuitUITests.debug.xcconfig */,
+				EB1F9A7AB272FD9CF29DD3AA /* Pods-KingdomPursuit-KingdomPursuitUITests.release.xcconfig */,
+				199A2A84BE5B2A68B61B67BC /* Pods-KingdomPursuitTests.debug.xcconfig */,
+				0F6A19315B3831F0A94C5238 /* Pods-KingdomPursuitTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D6746B02258AAE7700F155AB = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +143,8 @@
 				D6746B24258AAE9400F155AB /* KingdomPursuitTests */,
 				D6746B2F258AAE9400F155AB /* KingdomPursuitUITests */,
 				D6746B0C258AAE7800F155AB /* Products */,
+				BF930D0B27CC9CE01B04A6FF /* Pods */,
+				7174C89216D74F181A5A2261 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,10 +164,21 @@
 				D6746B0E258AAE7800F155AB /* AppDelegate.swift */,
 				D6746B10258AAE7800F155AB /* SceneDelegate.swift */,
 				D6746B12258AAE7800F155AB /* ViewController.swift */,
+				D662922025B8AB170049DAEE /* HomeView.swift */,
+				D662923025B8B1130049DAEE /* SpeakersView.swift */,
+				D662923825B8B29A0049DAEE /* WorshipView.swift */,
+				D662922525B8AB880049DAEE /* ScheduleView.swift */,
+				D662923D25B8B32C0049DAEE /* BreakoutsView.swift */,
+				D6F3F6C925A7ABE4008A42A3 /* PeopleViewController.swift */,
 				D6746B14258AAE7800F155AB /* Main.storyboard */,
 				D6746B17258AAE9300F155AB /* Assets.xcassets */,
 				D6746B19258AAE9300F155AB /* LaunchScreen.storyboard */,
 				D6746B1C258AAE9300F155AB /* Info.plist */,
+				AE494C8D25BB77C400D92D10 /* GoogleService-Info.plist */,
+				D6F3F6A0259FE261008A42A3 /* MyCollectionViewCell.swift */,
+				D6F3F6A1259FE261008A42A3 /* MyCollectionViewCell.xib */,
+				AE494C9225C2107000D92D10 /* TableViewCell.swift */,
+				AE494C9325C2107000D92D10 /* TableViewCell.xib */,
 			);
 			path = KingdomPursuit;
 			sourceTree = "<group>";
@@ -135,9 +208,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6746B35258AAE9400F155AB /* Build configuration list for PBXNativeTarget "KingdomPursuit" */;
 			buildPhases = (
+				A8F708E1FFC0692E58A3470B /* [CP] Check Pods Manifest.lock */,
 				D6746B07258AAE7800F155AB /* Sources */,
 				D6746B08258AAE7800F155AB /* Frameworks */,
 				D6746B09258AAE7800F155AB /* Resources */,
+				99E59DE1E5FBC13EA9EE95C6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +227,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6746B38258AAE9400F155AB /* Build configuration list for PBXNativeTarget "KingdomPursuitTests" */;
 			buildPhases = (
+				7DAECBC4F34D532D8E44838C /* [CP] Check Pods Manifest.lock */,
 				D6746B1D258AAE9400F155AB /* Sources */,
 				D6746B1E258AAE9400F155AB /* Frameworks */,
 				D6746B1F258AAE9400F155AB /* Resources */,
@@ -170,9 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6746B3B258AAE9400F155AB /* Build configuration list for PBXNativeTarget "KingdomPursuitUITests" */;
 			buildPhases = (
+				92425AADC1F42890120ABEED /* [CP] Check Pods Manifest.lock */,
 				D6746B28258AAE9400F155AB /* Sources */,
 				D6746B29258AAE9400F155AB /* Frameworks */,
 				D6746B2A258AAE9400F155AB /* Resources */,
+				F2D90133022858516CEF507C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,7 +309,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6F3F6A3259FE261008A42A3 /* MyCollectionViewCell.xib in Resources */,
+				AE494C9525C2107000D92D10 /* TableViewCell.xib in Resources */,
 				D6746B1B258AAE9300F155AB /* LaunchScreen.storyboard in Resources */,
+				AE494C8E25BB77C400D92D10 /* GoogleService-Info.plist in Resources */,
 				D6746B18258AAE9300F155AB /* Assets.xcassets in Resources */,
 				D6746B16258AAE7800F155AB /* Main.storyboard in Resources */,
 			);
@@ -253,13 +334,124 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7DAECBC4F34D532D8E44838C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KingdomPursuitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92425AADC1F42890120ABEED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KingdomPursuit-KingdomPursuitUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99E59DE1E5FBC13EA9EE95C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KingdomPursuit/Pods-KingdomPursuit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KingdomPursuit/Pods-KingdomPursuit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KingdomPursuit/Pods-KingdomPursuit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8F708E1FFC0692E58A3470B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KingdomPursuit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2D90133022858516CEF507C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KingdomPursuit-KingdomPursuitUITests/Pods-KingdomPursuit-KingdomPursuitUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KingdomPursuit-KingdomPursuitUITests/Pods-KingdomPursuit-KingdomPursuitUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KingdomPursuit-KingdomPursuitUITests/Pods-KingdomPursuit-KingdomPursuitUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D6746B07258AAE7800F155AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6F3F6CA25A7ABE4008A42A3 /* PeopleViewController.swift in Sources */,
 				D6746B13258AAE7800F155AB /* ViewController.swift in Sources */,
 				D6746B0F258AAE7800F155AB /* AppDelegate.swift in Sources */,
+				D662923E25B8B32C0049DAEE /* BreakoutsView.swift in Sources */,
+				D662922625B8AB880049DAEE /* ScheduleView.swift in Sources */,
+				D662922125B8AB170049DAEE /* HomeView.swift in Sources */,
+				AE494C9425C2107000D92D10 /* TableViewCell.swift in Sources */,
+				D662923925B8B29A0049DAEE /* WorshipView.swift in Sources */,
+				D6F3F6A2259FE261008A42A3 /* MyCollectionViewCell.swift in Sources */,
+				D662923125B8B1130049DAEE /* SpeakersView.swift in Sources */,
 				D6746B11258AAE7800F155AB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +625,7 @@
 		};
 		D6746B36258AAE9400F155AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F70C37B3DAF2B0FEC5A20C0 /* Pods-KingdomPursuit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +645,7 @@
 		};
 		D6746B37258AAE9400F155AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E029C57ED13C1E1D2FB1F5A /* Pods-KingdomPursuit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +665,7 @@
 		};
 		D6746B39258AAE9400F155AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 199A2A84BE5B2A68B61B67BC /* Pods-KingdomPursuitTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +688,7 @@
 		};
 		D6746B3A258AAE9400F155AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F6A19315B3831F0A94C5238 /* Pods-KingdomPursuitTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +711,7 @@
 		};
 		D6746B3C258AAE9400F155AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 103159B1F4BC1DF5938DA8C7 /* Pods-KingdomPursuit-KingdomPursuitUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +732,7 @@
 		};
 		D6746B3D258AAE9400F155AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB1F9A7AB272FD9CF29DD3AA /* Pods-KingdomPursuit-KingdomPursuitUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
