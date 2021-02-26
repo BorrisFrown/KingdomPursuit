@@ -84,7 +84,8 @@ class ScheduleView: UIViewController {
                 let tableView = UITableView()
                 tableView.backgroundColor = #colorLiteral(red: 0.7570065856, green: 0.7925702929, blue: 0.4755898118, alpha: 1)
                 tableView.frame = view.bounds
-        //            tableView.register(UITableViewCell.self, forCellReuseIdentifier: "scheduleCell")
+                tableView.dataSource = self
+                tableView.register(UITableViewCell.self, forCellReuseIdentifier: "scheduleCell")
                 return tableView
             }()
             
@@ -117,5 +118,16 @@ class ScheduleView: UIViewController {
 extension ScheduleView: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView:UIScrollView) {
         pageControl.currentPage = Int(floorf(Float(scrollView.contentOffset.x) / Float(scrollView.frame.size.width)))
+    }
+}
+
+extension ScheduleView: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "scheduleCell", for: indexPath)
+        cell.textLabel?.text = "Yoyo"
+        return cell
     }
 }
