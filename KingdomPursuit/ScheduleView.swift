@@ -7,15 +7,25 @@
 import Foundation
 import UIKit
 
-class ScheduleView: UIViewController {
+class ScheduleView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let thursTimes: [String] = [
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "scheduleCell", for: indexPath)
+        cell.textLabel?.text = "Yoyo"
+        return cell
+    }
+    
+    let thursTimes = [
         "3:00pm",
         "6:00pm",
         "6:30pm – 9:15pm"
     ]
     
-    let thursEvents: [String] = [
+    let thursEvents = [
         "Registration opens",
         "Auditorium opens",
         "Session 1: BOB HAZLETT"
@@ -37,6 +47,7 @@ class ScheduleView: UIViewController {
     func thursDesign(tableView: UITableView)
     {
         thurs.backgroundColor = #colorLiteral(red: 0.1294117719, green: 0.2156862766, blue: 0.06666667014, alpha: 1)
+        
         thurs.addSubview(tableView)
     }
 
@@ -92,13 +103,6 @@ class ScheduleView: UIViewController {
             let page = UIView(frame: CGRect(x: CGFloat(x) * view.frame.size.width, y: 0, width: view.frame.size.width, height: scrollView.frame.size.height))
             
             if x == 0 {
-//                let tableViewCell = UITableViewCell()
-//                let label = UILabel()
-//                for i in 0..<thursTimes.count{
-//                    label.text = thursTimes[i]
-//                    tableView.addSubview(tableViewCell)
-//                    tableViewCell.addSubview(label)
-//                }
                 thurs = page
                 thursDesign(tableView: tableView)
             }
@@ -121,13 +125,13 @@ extension ScheduleView: UIScrollViewDelegate {
     }
 }
 
-extension ScheduleView: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
-    }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "scheduleCell", for: indexPath)
-        cell.textLabel?.text = "Yoyo"
-        return cell
-    }
-}
+//extension ScheduleView: UITableViewDataSource {
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return 10
+//    }
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "scheduleCell", for: indexPath)
+//        cell.textLabel?.text = "Yoyo"
+//        return cell
+//    }
+//}
