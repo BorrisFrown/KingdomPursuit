@@ -12,6 +12,8 @@
 		AE494C8E25BB77C400D92D10 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE494C8D25BB77C400D92D10 /* GoogleService-Info.plist */; };
 		AE494C9425C2107000D92D10 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE494C9225C2107000D92D10 /* TableViewCell.swift */; };
 		AE494C9525C2107000D92D10 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE494C9325C2107000D92D10 /* TableViewCell.xib */; };
+		AE494CA825F0331700D92D10 /* ScheduleSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE494CA725F0331700D92D10 /* ScheduleSlide.swift */; };
+		AE494CAD25F0347F00D92D10 /* ScheduleSlide.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE494CAC25F0347F00D92D10 /* ScheduleSlide.xib */; };
 		B8E836C05EC554A3A7D9F507 /* Pods_KingdomPursuitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 709D7BAE43711B13E4820293 /* Pods_KingdomPursuitTests.framework */; };
 		D662922125B8AB170049DAEE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D662922025B8AB170049DAEE /* HomeView.swift */; };
 		D662922625B8AB880049DAEE /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D662922525B8AB880049DAEE /* ScheduleView.swift */; };
@@ -59,6 +61,8 @@
 		AE494C8D25BB77C400D92D10 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		AE494C9225C2107000D92D10 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		AE494C9325C2107000D92D10 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		AE494CA725F0331700D92D10 /* ScheduleSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleSlide.swift; sourceTree = "<group>"; };
+		AE494CAC25F0347F00D92D10 /* ScheduleSlide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleSlide.xib; sourceTree = "<group>"; };
 		B19727AA7520EE6A9FF5E958 /* Pods_KingdomPursuit_KingdomPursuitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KingdomPursuit_KingdomPursuitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D662922025B8AB170049DAEE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D662922525B8AB880049DAEE /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
@@ -167,6 +171,8 @@
 				D662922025B8AB170049DAEE /* HomeView.swift */,
 				D662923025B8B1130049DAEE /* SpeakersView.swift */,
 				D662923825B8B29A0049DAEE /* WorshipView.swift */,
+				AE494CA725F0331700D92D10 /* ScheduleSlide.swift */,
+				AE494CAC25F0347F00D92D10 /* ScheduleSlide.xib */,
 				D662922525B8AB880049DAEE /* ScheduleView.swift */,
 				D662923D25B8B32C0049DAEE /* BreakoutsView.swift */,
 				D6F3F6C925A7ABE4008A42A3 /* PeopleViewController.swift */,
@@ -309,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE494CAD25F0347F00D92D10 /* ScheduleSlide.xib in Resources */,
 				D6F3F6A3259FE261008A42A3 /* MyCollectionViewCell.xib in Resources */,
 				AE494C9525C2107000D92D10 /* TableViewCell.xib in Resources */,
 				D6746B1B258AAE9300F155AB /* LaunchScreen.storyboard in Resources */,
@@ -442,6 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE494CA825F0331700D92D10 /* ScheduleSlide.swift in Sources */,
 				D6F3F6CA25A7ABE4008A42A3 /* PeopleViewController.swift in Sources */,
 				D6746B13258AAE7800F155AB /* ViewController.swift in Sources */,
 				D6746B0F258AAE7800F155AB /* AppDelegate.swift in Sources */,

@@ -29,13 +29,13 @@ class ScheduleView: UIViewController, UIScrollViewDelegate {
     
     func createSlides() -> [ScheduleSlide] {
         let slide1:ScheduleSlide = Bundle.main.loadNibNamed("ScheduleSlide", owner: self, options: nil)?.first as! ScheduleSlide
-        slide1.tableView.backgroundColor = .red
+        slide1.backgroundColor = .red
                 
         let slide2:ScheduleSlide = Bundle.main.loadNibNamed("ScheduleSlide", owner: self, options: nil)?.first as! ScheduleSlide
-        slide2.tableView.backgroundColor = .yellow
+        slide2.backgroundColor = .yellow
                 
         let slide3:ScheduleSlide = Bundle.main.loadNibNamed("ScheduleSlide", owner: self, options: nil)?.first as! ScheduleSlide
-        slide3.tableView.backgroundColor = .blue
+        slide3.backgroundColor = .blue
         
         return [slide1, slide2, slide3]
     }
