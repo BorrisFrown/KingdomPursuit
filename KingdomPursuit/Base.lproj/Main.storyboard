@@ -184,14 +184,31 @@
                     <view key="view" contentMode="scaleToFill" id="yXI-zB-dRo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gKn-x3-fqY">
+                                <rect key="frame" x="0.0" y="77" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Tcx-2k-xmz"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="S5y-5v-idT"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="iiv-gO-sMc">
+                                <rect key="frame" x="146" y="785" width="123" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </pageControl>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ySD-BR-fpg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Schedule" image="icons8-schedule-30" id="hEw-mA-2Qv"/>
+                    <connections>
+                        <outlet property="ScrollView" destination="gKn-x3-fqY" id="gYN-Qv-cZ3"/>
+                        <outlet property="pageControl" destination="iiv-gO-sMc" id="ieC-xO-K0d"/>
+                        <outlet property="scrollView" destination="gKn-x3-fqY" id="EgI-fC-IOG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f5E-Ej-4PL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-120" y="544"/>
+            <point key="canvasLocation" x="-120.28985507246378" y="543.75"/>
         </scene>
         <!--Breakouts-->
         <scene sceneID="tAh-H2-VpC">
