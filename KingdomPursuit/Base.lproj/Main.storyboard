@@ -186,7 +186,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gKn-x3-fqY">
-                                <rect key="frame" x="0.0" y="77" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="81" width="414" height="732"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <viewLayoutGuide key="contentLayoutGuide" id="Tcx-2k-xmz"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="S5y-5v-idT"/>
