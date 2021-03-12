@@ -50,11 +50,15 @@ class ScheduleSlide: UIView {
         
         //Set the day title
         titleLabel.text = name
+//        titleLabel.frame = CGRect(x: 20, y: 44, width: 500, height: 50)
         
         //Replace the text labels with the 'times' array
         for i in 0 ..< events.count{
             timeLabels[i]?.text = times[i]
             eventLabels[i]?.text = events[i]
+
+            eventLabels[i]?.font = UIFont(name:"HelveticaNeue-Bold", size: 16.0)
+
         }
         
         //Delete any labels left after all of the times are processed.
