@@ -17,7 +17,7 @@ class ScheduleView: UIViewController, UIScrollViewDelegate {
     let thursEvents = ["Registration opens","Auditorium opens","Session 1: BOB HAZLETT"]
     let friTimes = ["8:00am","8:30am","9:00am - 10:45am","11:00am - 12:00pm","12:15pm - 1:30pm","1:30pm","2:00pm - 3:00pm","3:15pm - 4:15pm","4:15pm - 6:30pm","5:30pm","6:00pm","6:30pm - 9:00pm"]
     let friEvents = ["Atrium opens","Auditorium opens","Session 2: BOB HAZLETT","Session 3: VAN COCHRANE","Prophetic Panel Lunch","Atrium opens", "Breakout 1","Breakout 2","Dinner break","Atrium opens","Auditorium opens","Session 4: WENDY BACKLUND"]
-    let satTimes = ["8:00am","8:30am","9:00am - 10:45am","11:00am = 12:00pm","12:00pm - 2:00pm","1:30pm","2:00pm - 3:00pm","3:15pm - 4:15pm", "4:15pm - 6:30pm", "5:30pm", "6:00pm","6:30pm - 9:00pm"]
+    let satTimes = ["8:00am","8:30am","9:00am - 10:45am","11:00am - 12:00pm","12:00pm - 2:00pm","1:30pm","2:00pm - 3:00pm","3:15pm - 4:15pm", "4:15pm - 6:30pm", "5:30pm", "6:00pm","6:30pm - 9:00pm"]
     let satEvents = ["Atrium opens","Auditorium opens","Session 5: PUTTY PUTMAN","Session 6: CLAY HARRINGTON","Lunch break","Atrium opens","Breakout 1","Breakout 2","Dinner break","Atrium opens","Auditorium opens","Session 7: PUTTY PUTMAN"]
         
     override func viewDidLoad() {
@@ -35,13 +35,13 @@ class ScheduleView: UIViewController, UIScrollViewDelegate {
     
     func createSlides() -> [ScheduleSlide] {
         let slide1:ScheduleSlide = Bundle.main.loadNibNamed("ScheduleSlide", owner: self, options: nil)?.first as! ScheduleSlide
-        slide1.configure(with: thursEvents, times: thursTimes, name: "Thursday Schedule")
+        slide1.configure(with: thursEvents, times: thursTimes, name: "Thursday")
                 
         let slide2:ScheduleSlide = Bundle.main.loadNibNamed("ScheduleSlide", owner: self, options: nil)?.first as! ScheduleSlide
-        slide2.configure(with: friEvents, times: friTimes, name: "Friday Schedule")
+        slide2.configure(with: friEvents, times: friTimes, name: "Friday")
                 
         let slide3:ScheduleSlide = Bundle.main.loadNibNamed("ScheduleSlide", owner: self, options: nil)?.first as! ScheduleSlide
-        slide3.configure(with: satEvents, times: satTimes, name: "Saturday Schedule")
+        slide3.configure(with: satEvents, times: satTimes, name: "Saturday")
         
         return [slide1, slide2, slide3]
     }

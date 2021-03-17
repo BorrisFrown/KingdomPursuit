@@ -324,10 +324,10 @@
                     <viewLayoutGuide key="contentLayoutGuide" id="zbh-K0-LKm"/>
                     <viewLayoutGuide key="frameLayoutGuide" id="1of-zb-3Ke"/>
                 </scrollView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day Schedule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="sO5-hH-53E">
-                    <rect key="frame" x="20" y="44" width="374" height="36"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="sO5-hH-53E">
+                    <rect key="frame" x="20" y="71" width="134" height="36"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -350,6 +350,7 @@
                 <outlet property="event7" destination="vc3-tc-0Ns" id="vhj-Bc-aDt"/>
                 <outlet property="event8" destination="G04-1g-ZF9" id="aBq-A7-QzE"/>
                 <outlet property="event9" destination="JF9-2k-YUQ" id="Hde-oh-maU"/>
+                <outlet property="scrollView" destination="iz5-aV-Nro" id="2iX-E5-IiZ"/>
                 <outlet property="time1" destination="WMr-RU-9G0" id="Cw3-4x-bKq"/>
                 <outlet property="time10" destination="4G4-ZP-5bJ" id="Z6S-PY-bmn"/>
                 <outlet property="time11" destination="TYg-60-bPl" id="7rJ-ic-8ue"/>

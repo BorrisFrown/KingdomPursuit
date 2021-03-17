@@ -50,7 +50,7 @@ class ScheduleSlide: UIView {
         
         //Set the day title
         titleLabel.text = name
-//        titleLabel.frame = CGRect(x: 20, y: 44, width: 500, height: 50)
+        titleLabel.frame = CGRect(x: scrollView.frame.minX, y: scrollView.frame.minY - 25, width: scrollView.frame.width / 3, height: 25)
         
         //Replace the text labels with the 'times' array
         for i in 0 ..< events.count{
