@@ -50,12 +50,18 @@ class ScheduleSlide: UIView {
         
         //Set the day title
         titleLabel.text = name
-        titleLabel.frame = CGRect(x: scrollView.frame.minX, y: scrollView.frame.minY - 25, width: scrollView.frame.width / 3, height: 25)
+        titleLabel.textAlignment = .center
+        titleLabel.frame = CGRect(x: 0, y: scrollView.frame.minY - 25, width: scrollView.frame.width, height: 25)
+        titleLabel.backgroundColor = .black
+        titleLabel.textColor = .white
         
         //Replace the text labels with the 'times' array
         for i in 0 ..< events.count{
+//            timeLabels[i]?.textAlignment = .center
             timeLabels[i]?.text = times[i]
+//            timeLabels[i]?.backgroundColor = #colorLiteral(red: 0.7570065856, green: 0.7925702929, blue: 0.4755898118, alpha: 1)
             eventLabels[i]?.text = events[i]
+//            eventLabels[i]?.backgroundColor = #colorLiteral(red: 0.7570065856, green: 0.7925702929, blue: 0.4755898118, alpha: 1)
 
             eventLabels[i]?.font = UIFont(name:"HelveticaNeue-Bold", size: 16.0)
 

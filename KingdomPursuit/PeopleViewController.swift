@@ -18,34 +18,35 @@ class PeopleViewController: UIViewController {
         
         let screenWidth = UIScreen.main.bounds.width
         let imageDimen = screenWidth / 3
-        let imageXPos = screenWidth / 2 - imageDimen / 2
-        
+        let imageXPos = 10
         let nameLabel = UILabel(frame: view.bounds)
-        let descLabel = UILabel(frame: view.bounds)
+        let descLabel = UITextView(frame: view.bounds)
         let image = UIImage(named: name)
         let imageView = UIImageView(image: image)
         
         view.addSubview(nameLabel)
-        nameLabel.backgroundColor = #colorLiteral(red: 0.9820969875, green: 1, blue: 0.6141437519, alpha: 1)
-        nameLabel.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 50)
+//        nameLabel.backgroundColor = #colorLiteral(red: 0.9820969875, green: 1, blue: 0.6141437519, alpha: 1)
+        nameLabel.frame = CGRect(x: imageDimen + 10, y: imageDimen / 4, width: UIScreen.main.bounds.width - imageDimen - 10, height: imageDimen * 2 / 3)
         nameLabel.textAlignment = .center
-        nameLabel.font = nameLabel.font.withSize(30)
+        nameLabel.font = nameLabel.font.withSize(26)
         nameLabel.numberOfLines = -1
         nameLabel.text = name
         
         view.addSubview(imageView)
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
-        imageView.frame = CGRect(x: imageXPos, y: 60, width: imageDimen, height: imageDimen)
-        imageView.layer.cornerRadius = imageDimen / 4
+        imageView.frame = CGRect(x: CGFloat(imageXPos), y: CGFloat(imageXPos), width: imageDimen, height: imageDimen)
+        imageView.layer.cornerRadius = imageDimen / 8
         
         view.addSubview(descLabel)
-        descLabel.frame = CGRect(x: 10, y: 70 + imageDimen, width: UIScreen.main.bounds.width - 20, height: UIScreen.main.bounds.height)
-        descLabel.font = descLabel.font.withSize(18)
+        descLabel.isEditable = false
+        descLabel.frame = CGRect(x: 10, y: 20 + imageDimen, width: UIScreen.main.bounds.width - 20, height: UIScreen.main.bounds.height)
+        descLabel.font = UIFont.systemFont(ofSize: 20)
         descLabel.textAlignment = .natural
-        descLabel.numberOfLines = -1
+//        descLabel.numberOfLines = -1
         descLabel.text = desc
         descLabel.sizeToFit()
+        
     }
     
     private let name: String
