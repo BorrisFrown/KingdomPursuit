@@ -57,61 +57,6 @@
             </objects>
             <point key="canvasLocation" x="-817.39130434782612" y="543.75"/>
         </scene>
-        <!--Thursday-->
-        <scene sceneID="iOI-k9-dzN">
-            <objects>
-                <viewController id="9jf-Oe-Bty" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Qzh-25-7Rf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="06c-VH-ofx">
-                                <rect key="frame" x="20" y="96" width="374" height="720"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="iwX-tA-qah"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Thursday" image="icons8-thursday-30" id="HUQ-7v-0Oc"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5Y2-Su-H96" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2157" y="2490"/>
-        </scene>
-        <!--Friday-->
-        <scene sceneID="iOL-nO-8AJ">
-            <objects>
-                <viewController id="D2h-eF-jfx" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="k5o-bj-u8T">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="oJG-L1-2nZ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Friday" image="icons8-friday-30" id="Ly2-zw-j9h"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a6j-xF-AgQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1457" y="2489"/>
-        </scene>
-        <!--Saturday-->
-        <scene sceneID="H0R-99-vQf">
-            <objects>
-                <viewController id="ovy-jO-ccI" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jxS-7F-KmW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="zuj-gw-bBg"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Saturday" image="icons8-saturday-30" id="xxg-eJ-h6U"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oC8-Q7-Aca" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-751" y="2489"/>
-        </scene>
         <!--Home-->
         <scene sceneID="mX1-5L-MQE">
             <objects>
@@ -154,28 +99,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8x8-DF-2eo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2241" y="544"/>
-        </scene>
-        <!--Schedule-->
-        <scene sceneID="XPD-QV-Hu9">
-            <objects>
-                <tabBarController id="D7g-r2-DFo" customClass="ScheduleView" customModule="KingdomPursuit" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Schedule" image="icons8-schedule-30" id="1eB-29-aMY"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="C9f-VA-e1b">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <outlet property="dayTabBar" destination="C9f-VA-e1b" id="jXu-QK-2aK"/>
-                        <segue destination="9jf-Oe-Bty" kind="relationship" relationship="viewControllers" id="XBA-1q-4Qe"/>
-                        <segue destination="ovy-jO-ccI" kind="relationship" relationship="viewControllers" id="Ahb-6l-WSH"/>
-                        <segue destination="D2h-eF-jfx" kind="relationship" relationship="viewControllers" id="7H8-sK-NWF"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ino-eb-I1o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1457" y="1725"/>
         </scene>
         <!--Schedule-->
         <scene sceneID="pa8-4E-aha">
@@ -378,14 +301,11 @@
     </scenes>
     <resources>
         <image name="Breakout schedule frame" width="147" height="716"/>
-        <image name="icons8-friday-30" width="30" height="30"/>
         <image name="icons8-home-page-30" width="30" height="30"/>
         <image name="icons8-idea-sharing-30" width="30" height="30"/>
         <image name="icons8-musical-notes-30" width="30" height="30"/>
         <image name="icons8-priest-30" width="30" height="30"/>
-        <image name="icons8-saturday-30" width="30" height="30"/>
         <image name="icons8-schedule-30" width="30" height="30"/>
-        <image name="icons8-thursday-30" width="30" height="30"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

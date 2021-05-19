@@ -13,7 +13,8 @@ class PeopleViewController: UIViewController {
         
         super.viewDidLoad()
         
-        view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        view.backgroundColor = UIColor (named: "ColorSet")
+        
         title = name.uppercased()
         
         let screenWidth = UIScreen.main.bounds.width
@@ -46,6 +47,7 @@ class PeopleViewController: UIViewController {
 //        descLabel.numberOfLines = -1
         descLabel.text = desc
         descLabel.sizeToFit()
+        descLabel.backgroundColor = UIColor (named: "ColorSet")
         
     }
     
