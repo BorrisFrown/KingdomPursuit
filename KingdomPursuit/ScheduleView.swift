@@ -30,6 +30,14 @@ class ScheduleView: UIViewController, UIScrollViewDelegate {
             
         pageControl.numberOfPages = slides.count
         pageControl.currentPage = 0
+        if traitCollection.userInterfaceStyle == .dark {
+            pageControl.currentPageIndicatorTintColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+            pageControl.pageIndicatorTintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        }
+        else {
+            pageControl.pageIndicatorTintColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+            pageControl.currentPageIndicatorTintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        }
         view.bringSubviewToFront(pageControl)
     }
     

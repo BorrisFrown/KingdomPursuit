@@ -20,6 +20,7 @@ class PeopleViewController: UIViewController {
         let screenWidth = UIScreen.main.bounds.width
         let imageDimen = screenWidth / 3
         let imageXPos = 10
+        
         let nameLabel = UILabel(frame: view.bounds)
         let descLabel = UITextView(frame: view.bounds)
         let image = UIImage(named: name)
@@ -40,13 +41,14 @@ class PeopleViewController: UIViewController {
         imageView.layer.cornerRadius = imageDimen / 8
         
         view.addSubview(descLabel)
+        let ypos = 20 + imageDimen
         descLabel.isEditable = false
-        descLabel.frame = CGRect(x: 10, y: 20 + imageDimen, width: UIScreen.main.bounds.width - 20, height: UIScreen.main.bounds.height)
+        descLabel.frame = CGRect(x: 10, y: ypos, width: UIScreen.main.bounds.width - 20, height: UIScreen.main.bounds.height - ypos - 50)
         descLabel.font = UIFont.systemFont(ofSize: 20)
         descLabel.textAlignment = .natural
 //        descLabel.numberOfLines = -1
         descLabel.text = desc
-        descLabel.sizeToFit()
+//        descLabel.sizeToFit()
         descLabel.backgroundColor = UIColor (named: "ColorSet")
         
     }
