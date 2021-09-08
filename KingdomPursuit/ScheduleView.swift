@@ -32,11 +32,11 @@ class ScheduleView: UIViewController, UIScrollViewDelegate {
         pageControl.currentPage = 0
         if traitCollection.userInterfaceStyle == .dark {
             pageControl.currentPageIndicatorTintColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-            pageControl.pageIndicatorTintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+            pageControl.pageIndicatorTintColor = #colorLiteral(red: 0.370555222, green: 0.3705646992, blue: 0.3705595732, alpha: 1)
         }
         else {
             pageControl.pageIndicatorTintColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-            pageControl.currentPageIndicatorTintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+            pageControl.currentPageIndicatorTintColor = #colorLiteral(red: 0.370555222, green: 0.3705646992, blue: 0.3705595732, alpha: 1)
         }
         view.bringSubviewToFront(pageControl)
     }
@@ -55,7 +55,7 @@ class ScheduleView: UIViewController, UIScrollViewDelegate {
     }
     
     func setupSlideScrollView(slides : [ScheduleSlide]) {
-            scrollView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
+            scrollView.frame = CGRect(x: 0, y: 200, width: view.frame.width, height: view.frame.height)
             scrollView.contentSize = CGSize(width: view.frame.width * CGFloat(slides.count), height: view.frame.height)
             scrollView.isPagingEnabled = true
             

@@ -15,17 +15,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="KP Loading Screen" translatesAutoresizingMaskIntoConstraints="NO" id="7Pb-hC-NbF">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KP Loading Screen" translatesAutoresizingMaskIntoConstraints="NO" id="7Pb-hC-NbF">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SMD-Zh-VIF"/>
                         <color key="backgroundColor" red="0.94118285180000005" green="0.94116520879999999" blue="0.9411771297" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="7Pb-hC-NbF" firstAttribute="top" secondItem="SMD-Zh-VIF" secondAttribute="top" id="554-Pi-UrK"/>
+                            <constraint firstItem="7Pb-hC-NbF" firstAttribute="top" secondItem="lDg-V9-DUB" secondAttribute="top" id="NoI-jp-lKP"/>
                             <constraint firstItem="SMD-Zh-VIF" firstAttribute="trailing" secondItem="7Pb-hC-NbF" secondAttribute="trailing" id="R4m-gb-q7h"/>
+                            <constraint firstAttribute="bottom" secondItem="7Pb-hC-NbF" secondAttribute="bottom" id="omT-Fb-1KJ"/>
                             <constraint firstItem="7Pb-hC-NbF" firstAttribute="leading" secondItem="SMD-Zh-VIF" secondAttribute="leading" id="rmm-eB-SwD"/>
-                            <constraint firstItem="SMD-Zh-VIF" firstAttribute="bottom" secondItem="7Pb-hC-NbF" secondAttribute="bottom" id="vLa-HS-TwT"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -35,6 +35,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="KP Loading Screen" width="1727" height="2301"/>
+        <image name="KP Loading Screen" width="3024" height="4032"/>
     </resources>
 </document>

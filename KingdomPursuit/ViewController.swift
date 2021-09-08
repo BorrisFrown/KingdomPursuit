@@ -10,8 +10,8 @@ class MainController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
+    
 }
 
 class PersonView: UIViewController {

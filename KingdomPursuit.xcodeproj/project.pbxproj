@@ -17,6 +17,8 @@
 		AE494CC72604F46300D92D10 /* BreakoutSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE494CC62604F46100D92D10 /* BreakoutSlide.swift */; };
 		AE494CCC2604F49300D92D10 /* BreakoutSlide.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE494CCB2604F49300D92D10 /* BreakoutSlide.xib */; };
 		AE494CD1260E31F900D92D10 /* BreakoutSpeakersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE494CD0260E31F800D92D10 /* BreakoutSpeakersView.swift */; };
+		AEC8991526E2BE7400A9AF85 /* UPPERROOMTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC8991326E2BE7400A9AF85 /* UPPERROOMTableViewCell.swift */; };
+		AEC8991626E2BE7400A9AF85 /* UPPERROOMTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEC8991426E2BE7400A9AF85 /* UPPERROOMTableViewCell.xib */; };
 		B8E836C05EC554A3A7D9F507 /* Pods_KingdomPursuitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 709D7BAE43711B13E4820293 /* Pods_KingdomPursuitTests.framework */; };
 		D662922125B8AB170049DAEE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D662922025B8AB170049DAEE /* HomeView.swift */; };
 		D662922625B8AB880049DAEE /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D662922525B8AB880049DAEE /* ScheduleView.swift */; };
@@ -69,6 +71,8 @@
 		AE494CC62604F46100D92D10 /* BreakoutSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakoutSlide.swift; sourceTree = "<group>"; };
 		AE494CCB2604F49300D92D10 /* BreakoutSlide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BreakoutSlide.xib; sourceTree = "<group>"; };
 		AE494CD0260E31F800D92D10 /* BreakoutSpeakersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakoutSpeakersView.swift; sourceTree = "<group>"; };
+		AEC8991326E2BE7400A9AF85 /* UPPERROOMTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPPERROOMTableViewCell.swift; sourceTree = "<group>"; };
+		AEC8991426E2BE7400A9AF85 /* UPPERROOMTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UPPERROOMTableViewCell.xib; sourceTree = "<group>"; };
 		B19727AA7520EE6A9FF5E958 /* Pods_KingdomPursuit_KingdomPursuitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KingdomPursuit_KingdomPursuitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D662922025B8AB170049DAEE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D662922525B8AB880049DAEE /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
@@ -194,6 +198,8 @@
 				AE494CC62604F46100D92D10 /* BreakoutSlide.swift */,
 				AE494CCB2604F49300D92D10 /* BreakoutSlide.xib */,
 				AE494CD0260E31F800D92D10 /* BreakoutSpeakersView.swift */,
+				AEC8991326E2BE7400A9AF85 /* UPPERROOMTableViewCell.swift */,
+				AEC8991426E2BE7400A9AF85 /* UPPERROOMTableViewCell.xib */,
 			);
 			path = KingdomPursuit;
 			sourceTree = "<group>";
@@ -328,6 +334,7 @@
 				AE494CAD25F0347F00D92D10 /* ScheduleSlide.xib in Resources */,
 				D6F3F6A3259FE261008A42A3 /* MyCollectionViewCell.xib in Resources */,
 				AE494C9525C2107000D92D10 /* TableViewCell.xib in Resources */,
+				AEC8991626E2BE7400A9AF85 /* UPPERROOMTableViewCell.xib in Resources */,
 				D6746B1B258AAE9300F155AB /* LaunchScreen.storyboard in Resources */,
 				AE494C8E25BB77C400D92D10 /* GoogleService-Info.plist in Resources */,
 				D6746B18258AAE9300F155AB /* Assets.xcassets in Resources */,
@@ -468,6 +475,7 @@
 				D662923E25B8B32C0049DAEE /* BreakoutsView.swift in Sources */,
 				D662922625B8AB880049DAEE /* ScheduleView.swift in Sources */,
 				D662922125B8AB170049DAEE /* HomeView.swift in Sources */,
+				AEC8991526E2BE7400A9AF85 /* UPPERROOMTableViewCell.swift in Sources */,
 				AE494C9425C2107000D92D10 /* TableViewCell.swift in Sources */,
 				D662923925B8B29A0049DAEE /* WorshipView.swift in Sources */,
 				D6F3F6A2259FE261008A42A3 /* MyCollectionViewCell.swift in Sources */,

@@ -51,8 +51,8 @@ class ScheduleSlide: UIView {
         //Set the day title
         titleLabel.text = name
         titleLabel.textAlignment = .center
-        titleLabel.frame = CGRect(x: 0, y: scrollView.frame.minY - 25, width: scrollView.frame.width, height: 25)
-        titleLabel.backgroundColor = .black
+        titleLabel.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: 25)
+        titleLabel.backgroundColor = UIColor.init(named: "KPRed")
         titleLabel.textColor = .white
         
         //Replace the text labels with the 'times' array

@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,15 +17,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Worship Leaders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKd-9H-15e">
-                                <rect key="frame" x="20" y="44" width="217.5" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKd-9H-15e">
+                                <rect key="frame" x="20" y="94" width="316.5" height="45"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Worship Leaders">
+                                        <attributes>
+                                            <color key="NSColor" name="KPRed"/>
+                                            <font key="NSFont" size="36" name="GillSans-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" name="KPShadow"/>
+                                <size key="shadowOffset" width="7" height="3"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qk4-ka-1v0">
-                                <rect key="frame" x="0.0" y="80" width="414" height="733"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="0.0" y="189" width="414" height="624"/>
+                                <color key="backgroundColor" name="BackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="1fs-4S-cma">
                                         <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
@@ -32,18 +41,19 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1fs-4S-cma" id="t7t-Pa-Lnv">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" name="BackgroundColor"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qUQ-tM-vDV"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="hKd-9H-15e" firstAttribute="leading" secondItem="qUQ-tM-vDV" secondAttribute="leading" constant="20" id="2e4-zg-cNS"/>
                             <constraint firstItem="qUQ-tM-vDV" firstAttribute="bottom" secondItem="qk4-ka-1v0" secondAttribute="bottom" id="4UG-Al-NC6"/>
-                            <constraint firstItem="hKd-9H-15e" firstAttribute="top" secondItem="qUQ-tM-vDV" secondAttribute="top" id="9y5-i6-j2b"/>
-                            <constraint firstItem="qk4-ka-1v0" firstAttribute="top" secondItem="hKd-9H-15e" secondAttribute="bottom" id="NhS-wb-Ecs"/>
+                            <constraint firstItem="hKd-9H-15e" firstAttribute="top" secondItem="qUQ-tM-vDV" secondAttribute="top" constant="50" id="JFF-nJ-EGE"/>
+                            <constraint firstItem="qk4-ka-1v0" firstAttribute="top" secondItem="hKd-9H-15e" secondAttribute="bottom" constant="50" id="mes-dO-Xeb"/>
                             <constraint firstItem="qk4-ka-1v0" firstAttribute="leading" secondItem="qUQ-tM-vDV" secondAttribute="leading" id="oEP-oR-LND"/>
                             <constraint firstItem="qUQ-tM-vDV" firstAttribute="trailing" secondItem="qk4-ka-1v0" secondAttribute="trailing" id="wrA-T7-EZd"/>
                         </constraints>
@@ -65,14 +75,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ZA-eS-ZUp">
-                                <rect key="frame" x="20" y="44" width="384" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ZA-eS-ZUp">
+                                <rect key="frame" x="20" y="94" width="384" height="45"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Welcome">
+                                        <attributes>
+                                            <color key="NSColor" name="KPRed"/>
+                                            <font key="NSFont" size="36" name="GillSans-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" name="KPShadow"/>
+                                <size key="shadowOffset" width="7" height="3"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvf-CH-beg">
-                                <rect key="frame" x="20" y="88" width="374" height="142.5"/>
+                                <rect key="frame" x="20" y="189" width="374" height="142.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" id="HVy-fl-wqr"/>
                                 </constraints>
@@ -83,13 +105,12 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qyv-Hp-YcC"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="5ZA-eS-ZUp" firstAttribute="top" secondItem="qyv-Hp-YcC" secondAttribute="top" constant="50" id="5Rz-V9-3vC"/>
                             <constraint firstItem="qyv-Hp-YcC" firstAttribute="trailing" secondItem="5ZA-eS-ZUp" secondAttribute="trailing" constant="10" id="6KU-Rc-dIH"/>
-                            <constraint firstItem="5ZA-eS-ZUp" firstAttribute="top" secondItem="qyv-Hp-YcC" secondAttribute="top" id="D0R-av-uPb"/>
-                            <constraint firstItem="kvf-CH-beg" firstAttribute="top" secondItem="5ZA-eS-ZUp" secondAttribute="bottom" constant="8" symbolic="YES" id="ESm-if-bKV"/>
                             <constraint firstItem="qyv-Hp-YcC" firstAttribute="trailing" secondItem="kvf-CH-beg" secondAttribute="trailing" constant="20" id="Izy-Fr-AIY"/>
-                            <constraint firstItem="kvf-CH-beg" firstAttribute="top" secondItem="5ZA-eS-ZUp" secondAttribute="bottom" constant="8" symbolic="YES" id="Jo5-f9-t2b"/>
+                            <constraint firstItem="kvf-CH-beg" firstAttribute="top" secondItem="5ZA-eS-ZUp" secondAttribute="bottom" constant="50" id="Jo5-f9-t2b"/>
                             <constraint firstItem="kvf-CH-beg" firstAttribute="leading" secondItem="qyv-Hp-YcC" secondAttribute="leading" constant="20" id="WYe-TY-37w"/>
                             <constraint firstItem="5ZA-eS-ZUp" firstAttribute="leading" secondItem="qyv-Hp-YcC" secondAttribute="leading" constant="20" id="pgI-Oe-bq5"/>
                         </constraints>
@@ -108,28 +129,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gKn-x3-fqY">
-                                <rect key="frame" x="0.0" y="81" width="414" height="732"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="Tcx-2k-xmz"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="S5y-5v-idT"/>
-                            </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="iiv-gO-sMc">
                                 <rect key="frame" x="146" y="785" width="123" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </pageControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Schedule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hP6-I7-lVQ">
-                                <rect key="frame" x="20" y="44" width="121.5" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hP6-I7-lVQ">
+                                <rect key="frame" x="20" y="94" width="170.5" height="45"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Schedule">
+                                        <attributes>
+                                            <color key="NSColor" name="KPRed"/>
+                                            <font key="NSFont" size="36" name="GillSans-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" name="KPShadow"/>
+                                <size key="shadowOffset" width="7" height="3"/>
                             </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gKn-x3-fqY">
+                                <rect key="frame" x="0.0" y="186" width="414" height="627"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="BackgroundColor"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Tcx-2k-xmz"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="S5y-5v-idT"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ySD-BR-fpg"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="hP6-I7-lVQ" firstAttribute="leading" secondItem="ySD-BR-fpg" secondAttribute="leading" constant="20" id="39A-Tp-4Ia"/>
-                            <constraint firstItem="hP6-I7-lVQ" firstAttribute="top" secondItem="ySD-BR-fpg" secondAttribute="top" id="XVZ-95-6dA"/>
+                            <constraint firstItem="hP6-I7-lVQ" firstAttribute="top" secondItem="ySD-BR-fpg" secondAttribute="top" constant="50" id="Vcb-iO-zN0"/>
+                            <constraint firstItem="ySD-BR-fpg" firstAttribute="trailing" secondItem="hP6-I7-lVQ" secondAttribute="trailing" constant="223.5" id="nc8-h5-QKI"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Schedule" image="icons8-schedule-30" id="hEw-mA-2Qv"/>
@@ -150,22 +181,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breakouts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sv6-vC-NYq">
-                                <rect key="frame" x="20" y="44" width="374" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sv6-vC-NYq">
+                                <rect key="frame" x="20" y="94" width="374" height="45"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Breakouts">
+                                        <attributes>
+                                            <color key="NSColor" name="KPRed"/>
+                                            <font key="NSFont" size="36" name="GillSans-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" name="KPShadow"/>
+                                <size key="shadowOffset" width="7" height="3"/>
                             </label>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Iwf-hS-Ka8">
                                 <rect key="frame" x="145" y="434" width="123" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </pageControl>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Breakout schedule frame" translatesAutoresizingMaskIntoConstraints="NO" id="u5W-sW-6x1">
-                                <rect key="frame" x="0.0" y="80" width="122" height="600"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i62-xO-Mkz">
-                                <rect key="frame" x="122" y="80" width="292" height="600"/>
+                                <rect key="frame" x="130" y="213" width="292" height="600"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <viewLayoutGuide key="contentLayoutGuide" id="faG-cj-R2V"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="drk-59-u5U"/>
@@ -178,12 +213,16 @@
                                     <segue destination="InB-eH-H2q" kind="show" id="CAH-rN-1Ey"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Breakout schedule frame" translatesAutoresizingMaskIntoConstraints="NO" id="u5W-sW-6x1">
+                                <rect key="frame" x="0.0" y="189" width="122" height="716"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qXv-OM-wKo"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="u5W-sW-6x1" firstAttribute="top" secondItem="sv6-vC-NYq" secondAttribute="bottom" constant="50" id="6Iy-o7-yfS"/>
                             <constraint firstItem="sv6-vC-NYq" firstAttribute="leading" secondItem="qXv-OM-wKo" secondAttribute="leading" constant="20" id="HLX-fS-b5f"/>
-                            <constraint firstItem="sv6-vC-NYq" firstAttribute="top" secondItem="qXv-OM-wKo" secondAttribute="top" id="v5P-Bf-P8k"/>
+                            <constraint firstItem="sv6-vC-NYq" firstAttribute="top" secondItem="qXv-OM-wKo" secondAttribute="top" constant="50" id="v5P-Bf-P8k"/>
                             <constraint firstItem="qXv-OM-wKo" firstAttribute="trailing" secondItem="sv6-vC-NYq" secondAttribute="trailing" constant="20" id="zCY-Tg-2x8"/>
                         </constraints>
                     </view>
@@ -220,7 +259,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4mT-b8-10I"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="DXg-9u-Xex"/>
                     <connections>
@@ -239,27 +278,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Speakers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R88-ct-NFW">
-                                <rect key="frame" x="20" y="44" width="384" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R88-ct-NFW">
+                                <rect key="frame" x="20" y="94" width="384" height="45"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Main Speakers">
+                                        <attributes>
+                                            <color key="NSColor" name="KPRed"/>
+                                            <font key="NSFont" size="36" name="GillSans-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" name="KPShadow"/>
+                                <size key="shadowOffset" width="7" height="3"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WWJ-Ef-e5y">
-                                <rect key="frame" x="0.0" y="80" width="414" height="733"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="0.0" y="189" width="414" height="624"/>
+                                <color key="backgroundColor" name="BackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eeY-k3-aek"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="WWJ-Ef-e5y" firstAttribute="leading" secondItem="eeY-k3-aek" secondAttribute="leading" id="3Fj-Ap-hFy"/>
-                            <constraint firstItem="WWJ-Ef-e5y" firstAttribute="top" secondItem="R88-ct-NFW" secondAttribute="bottom" id="Brj-lA-H6w"/>
                             <constraint firstItem="eeY-k3-aek" firstAttribute="bottom" secondItem="WWJ-Ef-e5y" secondAttribute="bottom" id="DF6-pM-tph"/>
                             <constraint firstItem="eeY-k3-aek" firstAttribute="trailing" secondItem="WWJ-Ef-e5y" secondAttribute="trailing" id="DqZ-jV-Bmm"/>
+                            <constraint firstItem="WWJ-Ef-e5y" firstAttribute="top" secondItem="R88-ct-NFW" secondAttribute="bottom" constant="50" id="f9k-Tu-7Wc"/>
                             <constraint firstItem="R88-ct-NFW" firstAttribute="leading" secondItem="eeY-k3-aek" secondAttribute="leading" constant="20" id="jbq-H8-C1D"/>
+                            <constraint firstItem="R88-ct-NFW" firstAttribute="top" secondItem="eeY-k3-aek" secondAttribute="top" constant="50" id="maw-wx-5Qp"/>
                             <constraint firstItem="eeY-k3-aek" firstAttribute="trailing" secondItem="R88-ct-NFW" secondAttribute="trailing" constant="10" id="u9y-5r-wua"/>
-                            <constraint firstItem="R88-ct-NFW" firstAttribute="top" secondItem="eeY-k3-aek" secondAttribute="top" id="zHR-iL-R19"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Speakers" image="icons8-priest-30" id="cqZ-39-4gX"/>
@@ -279,10 +326,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" red="0.9071630798721535" green="0.92370009419999999" blue="0.56728464146327406" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" name="KPRed"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                <color key="value" red="0.76353883739999995" green="0.7913802862" blue="0.51367646460000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="value" name="KPRed"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </tabBar>
@@ -306,6 +353,15 @@
         <image name="icons8-musical-notes-30" width="30" height="30"/>
         <image name="icons8-priest-30" width="30" height="30"/>
         <image name="icons8-schedule-30" width="30" height="30"/>
+        <namedColor name="BackgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="KPRed">
+            <color red="0.70835548640000001" green="0.41665095089999998" blue="0.36076807979999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="KPShadow">
+            <color red="0.9016773105" green="0.88677984480000005" blue="0.85097593069999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
