@@ -16,6 +16,11 @@ class UPPERROOMTableViewCell: UITableViewCell {
     static func nib() -> UINib {
         return UINib(nibName: "UPPERROOMTableViewCell", bundle: nil)
     }
+    
+    public func configure(with imageName: String){
+        
+        upperroom.image = UIImage(named: imageName)
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()

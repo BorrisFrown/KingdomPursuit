@@ -10,6 +10,8 @@ import UIKit
 
 class WorshipView: UIViewController, UITableViewDelegate, UITableViewDataSource{
     @IBOutlet var tableView: UITableView!
+    var UPPERROOMImage = "UPPERROOM black bg"
+    
     
     func getDescForName(name:String) -> String {
         let desc: String
@@ -27,6 +29,9 @@ class WorshipView: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        if self.traitCollection.userInterfaceStyle == .dark{
+            UPPERROOMImage = "UPPERROOM white bg"
+        }
         tableView.register(UPPERROOMTableViewCell.nib(), forCellReuseIdentifier: UPPERROOMTableViewCell.identifier)
         tableView.delegate = self
         tableView.dataSource = self
@@ -38,7 +43,7 @@ class WorshipView: UIViewController, UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: UPPERROOMTableViewCell.identifier, for: indexPath) as! UPPERROOMTableViewCell
 //        let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.identifier, for: indexPath) as! TableViewCell
-//        cell.configure(with: speakers[indexPath.row], imageName: speakers[indexPath.row])
+        cell.configure(with: UPPERROOMImage)
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
