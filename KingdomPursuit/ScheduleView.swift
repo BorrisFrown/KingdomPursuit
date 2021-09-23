@@ -13,12 +13,12 @@ class ScheduleView: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var pageControl: UIPageControl!
     
     var slides:[ScheduleSlide] = [];
-    let thursTimes = ["3:00pm","6:00pm","6:30pm - 9:15pm"]
-    let thursEvents = ["Registration opens","Auditorium opens","Session 1: BOB HAZLETT"]
-    let friTimes = ["8:00am","8:30am","9:00am - 10:45am","11:00am - 12:00pm","12:15pm - 1:30pm","1:30pm","2:00pm - 3:00pm","3:15pm - 4:15pm","4:15pm - 6:30pm","5:30pm","6:00pm","6:30pm - 9:00pm"]
-    let friEvents = ["Atrium opens","Auditorium opens","Session 2: BOB HAZLETT","Session 3: VAN COCHRANE","Prophetic Panel Lunch","Atrium opens", "Breakout 1","Breakout 2","Dinner break","Atrium opens","Auditorium opens","Session 4: WENDY BACKLUND"]
-    let satTimes = ["8:00am","8:30am","9:00am - 10:45am","11:00am - 12:00pm","12:00pm - 2:00pm","1:30pm","2:00pm - 3:00pm","3:15pm - 4:15pm", "4:15pm - 6:30pm", "5:30pm", "6:00pm","6:30pm - 9:00pm"]
-    let satEvents = ["Atrium opens","Auditorium opens","Session 5: PUTTY PUTMAN","Session 6: CLAY HARRINGTON","Lunch break","Atrium opens","Breakout 1","Breakout 2","Dinner break","Atrium opens","Auditorium opens","Session 7: PUTTY PUTMAN"]
+    let thursTimes = ["3:00pm", "6:00pm", "6:30pm"]
+    let thursEvents = ["Registration opens", "Auditorium opens", "Session 1: Tom Crandall"]
+    let friTimes = ["8:50am - 9:30am", "9:30am", "9:45am", "11:45am", "1:30pm", "2:45pm - 4:00pm", "4:00pm - 6:00pm", "5:30pm", "6:00pm", "6:30pm",]
+    let friEvents = ["(doors close at 9am) Corporate prayer in auditorium - all are welcome","Auditorium opens","Session 2: Van Cochrane","Supernatural Lifestyle Luncheon ($25, pre-registration required)","Session 3 - Wilson Cochrane","Breakout sessions (see breakouts tab)", "Dinner Break","Atrium opens","Auditorium opens","Session 4 - UPPERROOM / Stacey Campbell"]
+    let satTimes = ["8:50am - 9:30am", "9:30am", "9:45am", "12:00pm - 1:00pm", "1:00pm - 5:00pm", "1:30pm", "2:45pm - 4:00pm", "4:00pm - 6:00pm", "5:30pm", "6:00pm", "6:30pm"]
+    let satEvents = ["(doors close at 9am) Corporate prayer in auditorium - all are welcome","Auditorium opens","Session 5: Steve Backlund","Lunch break","Prophecy tents (pre-registration required","Session 6 - Luke Haselmayer","Breakout sessions (see breakouts tab","Dinner break","Atrium opens","Auditorium opens","Session 7: UPPERROOM / Steve Backlund"]
         
     override func viewDidLoad() {
         super.viewDidLoad()

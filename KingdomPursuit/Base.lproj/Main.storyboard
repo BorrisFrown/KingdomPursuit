@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RkW-VQ-W1H">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RkW-VQ-W1H">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -18,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKd-9H-15e">
-                                <rect key="frame" x="20" y="94" width="316.5" height="45"/>
+                                <rect key="frame" x="20" y="94" width="394" height="45"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Worship Leaders">
                                         <attributes>
@@ -36,7 +37,7 @@
                                 <color key="backgroundColor" name="BackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="1fs-4S-cma">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1fs-4S-cma" id="t7t-Pa-Lnv">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -53,6 +54,7 @@
                             <constraint firstItem="hKd-9H-15e" firstAttribute="leading" secondItem="qUQ-tM-vDV" secondAttribute="leading" constant="20" id="2e4-zg-cNS"/>
                             <constraint firstItem="qUQ-tM-vDV" firstAttribute="bottom" secondItem="qk4-ka-1v0" secondAttribute="bottom" id="4UG-Al-NC6"/>
                             <constraint firstItem="hKd-9H-15e" firstAttribute="top" secondItem="qUQ-tM-vDV" secondAttribute="top" constant="50" id="JFF-nJ-EGE"/>
+                            <constraint firstItem="qUQ-tM-vDV" firstAttribute="trailing" secondItem="hKd-9H-15e" secondAttribute="trailing" id="RGi-NK-eTH"/>
                             <constraint firstItem="qk4-ka-1v0" firstAttribute="top" secondItem="hKd-9H-15e" secondAttribute="bottom" constant="50" id="mes-dO-Xeb"/>
                             <constraint firstItem="qk4-ka-1v0" firstAttribute="leading" secondItem="qUQ-tM-vDV" secondAttribute="leading" id="oEP-oR-LND"/>
                             <constraint firstItem="qUQ-tM-vDV" firstAttribute="trailing" secondItem="qk4-ka-1v0" secondAttribute="trailing" id="wrA-T7-EZd"/>
@@ -93,14 +95,19 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvf-CH-beg">
-                                <rect key="frame" x="20" y="189" width="374" height="142.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvf-CH-beg">
+                                <rect key="frame" x="20" y="189" width="374" height="264"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" id="HVy-fl-wqr"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit fgdgd d fgd  dgdg dg dgdf df dfgdg dgd  hiufhrihriugh rhgiduhgdiugh h riu hiughdiuhdriuh diuh iudh diu h iudhiu hiud hdiu iud dihdiu hg iuhrdiu dr i h</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">The kingdom of God is the dynamic, advancing rule and reign of God on the earth. God’s normal mode of operation for releasing His kingdom is in partnership with us, His sons and daughters. The heart of the Kingdom Pursuit Conference is to equip, encourage, and inspire people to passionately seek partnership with God in advancing His rule and reign in this world. We believe God will do this through presence-centered worship, revelatory teachings, and Holy Spirit encounters and ministry. Your kingdom come, Your will be done, on earth as it is in Heaven!</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -134,7 +141,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </pageControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hP6-I7-lVQ">
-                                <rect key="frame" x="20" y="94" width="170.5" height="45"/>
+                                <rect key="frame" x="20" y="94" width="394" height="45"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Schedule">
                                         <attributes>
@@ -160,7 +167,7 @@
                         <constraints>
                             <constraint firstItem="hP6-I7-lVQ" firstAttribute="leading" secondItem="ySD-BR-fpg" secondAttribute="leading" constant="20" id="39A-Tp-4Ia"/>
                             <constraint firstItem="hP6-I7-lVQ" firstAttribute="top" secondItem="ySD-BR-fpg" secondAttribute="top" constant="50" id="Vcb-iO-zN0"/>
-                            <constraint firstItem="ySD-BR-fpg" firstAttribute="trailing" secondItem="hP6-I7-lVQ" secondAttribute="trailing" constant="223.5" id="nc8-h5-QKI"/>
+                            <constraint firstItem="ySD-BR-fpg" firstAttribute="trailing" secondItem="hP6-I7-lVQ" secondAttribute="trailing" id="xbN-LQ-E1i"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Schedule" image="icons8-schedule-30" id="hEw-mA-2Qv"/>
@@ -199,39 +206,30 @@
                                 <rect key="frame" x="145" y="434" width="123" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </pageControl>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i62-xO-Mkz">
-                                <rect key="frame" x="130" y="213" width="292" height="600"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="faG-cj-R2V"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="drk-59-u5U"/>
-                            </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3e-i5-0Eg">
-                                <rect key="frame" x="156" y="735" width="101" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3e-i5-0Eg">
+                                <rect key="frame" x="156" y="755" width="101" height="30"/>
                                 <state key="normal" title="View Speakers"/>
                                 <connections>
                                     <segue destination="InB-eH-H2q" kind="show" id="CAH-rN-1Ey"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Breakout schedule frame" translatesAutoresizingMaskIntoConstraints="NO" id="u5W-sW-6x1">
-                                <rect key="frame" x="0.0" y="189" width="122" height="716"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wR5-91-S3D">
+                                <rect key="frame" x="0.0" y="187" width="110" height="540"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qXv-OM-wKo"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="u5W-sW-6x1" firstAttribute="top" secondItem="sv6-vC-NYq" secondAttribute="bottom" constant="50" id="6Iy-o7-yfS"/>
+                            <constraint firstItem="qXv-OM-wKo" firstAttribute="bottom" secondItem="s3e-i5-0Eg" secondAttribute="bottom" constant="28" id="6qF-Hd-9DR"/>
                             <constraint firstItem="sv6-vC-NYq" firstAttribute="leading" secondItem="qXv-OM-wKo" secondAttribute="leading" constant="20" id="HLX-fS-b5f"/>
+                            <constraint firstItem="qXv-OM-wKo" firstAttribute="trailing" secondItem="s3e-i5-0Eg" secondAttribute="trailing" constant="157" id="JKM-Zo-8VJ"/>
                             <constraint firstItem="sv6-vC-NYq" firstAttribute="top" secondItem="qXv-OM-wKo" secondAttribute="top" constant="50" id="v5P-Bf-P8k"/>
+                            <constraint firstItem="s3e-i5-0Eg" firstAttribute="leading" secondItem="qXv-OM-wKo" secondAttribute="leading" constant="156" id="vJH-jK-Mb6"/>
                             <constraint firstItem="qXv-OM-wKo" firstAttribute="trailing" secondItem="sv6-vC-NYq" secondAttribute="trailing" constant="20" id="zCY-Tg-2x8"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Breakouts" image="icons8-idea-sharing-30" id="Xu6-s2-6qp"/>
-                    <connections>
-                        <outlet property="imageFrame" destination="u5W-sW-6x1" id="Vwq-0t-tbm"/>
-                        <outlet property="pageControl" destination="Iwf-hS-Ka8" id="qgr-GL-miv"/>
-                        <outlet property="scrollView" destination="i62-xO-Mkz" id="hvX-uQ-1FP"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g0B-Bt-3vP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -347,7 +345,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Breakout schedule frame" width="147" height="716"/>
         <image name="icons8-home-page-30" width="30" height="30"/>
         <image name="icons8-idea-sharing-30" width="30" height="30"/>
         <image name="icons8-musical-notes-30" width="30" height="30"/>
@@ -357,10 +354,10 @@
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="KPRed">
-            <color red="0.70835548640000001" green="0.41665095089999998" blue="0.36076807979999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.70800000429153442" green="0.41699999570846558" blue="0.36100000143051147" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="KPShadow">
-            <color red="0.9016773105" green="0.88677984480000005" blue="0.85097593069999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.90200001001358032" green="0.88700002431869507" blue="0.85100001096725464" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
