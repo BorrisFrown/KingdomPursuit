@@ -6,11 +6,36 @@
 //
 
 import UIKit
-
 class ScheduleSlide: UIView {
     
+    private lazy var gradientLayerBottom: CAGradientLayer = {
+        let l = CAGradientLayer()
+        l.startPoint = CGPoint(x: 0.5, y: 0)
+        l.endPoint = CGPoint(x: 0.5, y: 1)
+        let baseColor = UIColor.init(named: "BackgroundColor")
+        l.colors = [
+            baseColor!.withAlphaComponent(0),
+            baseColor!.withAlphaComponent(1),
+        ].map{$0.cgColor}
+        layer.addSublayer(l)
+        return l
+    }()
+    
+    private lazy var gradientLayerTop: CAGradientLayer = {
+        let l = CAGradientLayer()
+        l.startPoint = CGPoint(x: 0.5, y: 1)
+        l.endPoint = CGPoint(x: 0.5, y: 0)
+        let baseColor = UIColor.init(named: "BackgroundColor")
+        l.colors = [
+            baseColor!.withAlphaComponent(0),
+            baseColor!.withAlphaComponent(1),
+        ].map{$0.cgColor}
+        layer.addSublayer(l)
+        return l
+    }()
+    
     @IBOutlet var view:UIView!
-    @IBOutlet var scrollView:UIScrollView!
+//    @IBOutlet var scrollView:UIScrollView!
     @IBOutlet var titleLabel:UILabel!
     @IBOutlet var time1:UILabel!
     @IBOutlet var time2:UILabel!
@@ -27,57 +52,91 @@ class ScheduleSlide: UIView {
     @IBOutlet var time13:UILabel!
     @IBOutlet var time14:UILabel!
     @IBOutlet var time15:UILabel!
-    @IBOutlet var event1:UILabel!
-    @IBOutlet var event2:UILabel!
-    @IBOutlet var event3:UILabel!
-    @IBOutlet var event4:UILabel!
-    @IBOutlet var event5:UILabel!
-    @IBOutlet var event6:UILabel!
-    @IBOutlet var event7:UILabel!
-    @IBOutlet var event8:UILabel!
-    @IBOutlet var event9:UILabel!
-    @IBOutlet var event10:UILabel!
-    @IBOutlet var event11:UILabel!
-    @IBOutlet var event12:UILabel!
-    @IBOutlet var event13:UILabel!
-    @IBOutlet var event14:UILabel!
-    @IBOutlet var event15:UILabel!
+//    @IBOutlet var event1:UILabel!
+//    @IBOutlet var event2:UILabel!
+//    @IBOutlet var event3:UILabel!
+//    @IBOutlet var event4:UILabel!
+//    @IBOutlet var event5:UILabel!
+//    @IBOutlet var event6:UILabel!
+//    @IBOutlet var event7:UILabel!
+//    @IBOutlet var event8:UILabel!
+//    @IBOutlet var event9:UILabel!
+//    @IBOutlet var event10:UILabel!
+//    @IBOutlet var event11:UILabel!
+//    @IBOutlet var event12:UILabel!
+//    @IBOutlet var event13:UILabel!
+//    @IBOutlet var event14:UILabel!
+//    @IBOutlet var event15:UILabel!
     
     public func configure(with events: Array<String>, times: Array<String>, name: String) {
         
-        let timeLabels = [time1, time2, time3, time4, time5, time6, time7, time8, time9, time10, time11, time12, time13, time14, time15]
-        let eventLabels = [event1, event2, event3, event4, event5, event6, event7, event8, event9, event10, event11, event12, event13, event14, event15]
+        var labelY = Int(20)
         
         //Set the day title
         titleLabel.text = name
         titleLabel.textAlignment = .center
-        titleLabel.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: 25)
-        titleLabel.backgroundColor = UIColor.init(named: "KPRed")
+        titleLabel.frame = CGRect(x: self.bounds.width / 3, y: 0, width: self.frame.width / 3, height: 35)
+        titleLabel.layer.masksToBounds = true
+        titleLabel.layer.cornerRadius = 5
+        titleLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 24.0)
+//        titleLabel.backgroundColor = UIColor.init(named: "KPRed")
         titleLabel.textColor = .white
+        
+        let scrollView = UIScrollView(frame: CGRect(x: 0, y: 35, width: self.bounds.width, height: self.bounds.height * 6 / 10))
+        scrollView.showsVerticalScrollIndicator = true
+        self.addSubview(scrollView)
         
         //Replace the text labels with the 'times' array
         for i in 0 ..< events.count{
-//            timeLabels[i]?.textAlignment = .center
-            timeLabels[i]?.text = times[i]
-//            timeLabels[i]?.backgroundColor = #colorLiteral(red: 0.7570065856, green: 0.7925702929, blue: 0.4755898118, alpha: 1)
-            eventLabels[i]?.text = events[i]
-//            eventLabels[i]?.backgroundColor = #colorLiteral(red: 0.7570065856, green: 0.7925702929, blue: 0.4755898118, alpha: 1)
-
-            eventLabels[i]?.font = UIFont(name:"HelveticaNeue-Bold", size: 16.0)
-
+            let eventHeight = Int(events[i].count / 24 + 1) * 28
+            print(eventHeight)
+            
+            let eventLabel = UILabel()
+            let timeLabel = UILabel()
+            
+            timeLabel.text = times[i]
+            timeLabel.numberOfLines = 0
+            timeLabel.frame = CGRect(x: 0, y: labelY, width: Int(self.bounds.width) * 3 / 8, height: eventHeight)
+            timeLabel.textAlignment = .right
+            
+            eventLabel.text = events[i]
+            eventLabel.numberOfLines = 0
+            eventLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 16.0)
+            eventLabel.lineBreakMode = .byWordWrapping
+            eventLabel.frame = CGRect(x: Int(self.bounds.width) / 2 - 20, y: labelY, width: Int(self.bounds.width / 2), height: eventHeight)
+//            eventLabel.backgroundColor = UIColor.red
+            
+            labelY += eventHeight + 8
+//            eventLabel.backgroundColor = UIColor.red
+            scrollView.addSubview(timeLabel)
+            scrollView.addSubview(eventLabel)
+        }
+        scrollView.contentSize = CGSize(width: scrollView.bounds.width, height: CGFloat(labelY) + 50)
+        
+        gradientLayerTop.frame = CGRect(x: 0, y: 35, width: Int(self.bounds.height), height: 30)
+        
+        gradientLayerBottom.frame = CGRect(x: 0, y: Int(self.bounds.height) * 6/10 + 6, width: Int(self.bounds.width), height: 30)
+        
+        let swipeLabel = UILabel(frame: CGRect(x: 0, y: Int(self.bounds.height * 6/10 + 44), width: Int(self.bounds.width) - 10, height: 20))
+        swipeLabel.textAlignment = .right
+        
+        switch name {
+        case "Thursday":
+            swipeLabel.text = "Swipe Friday →"
+        case "Friday":
+            swipeLabel.text = "Saturday →"
+        default:
+            swipeLabel.text = ""
         }
         
-        //Delete any labels left after all of the times are processed.
-        for i in events.count ..< timeLabels.count{
-            timeLabels[i]?.removeFromSuperview()
-            eventLabels[i]?.removeFromSuperview()
-        }
+        addSubview(swipeLabel)
     }
     
     // Initialization code
     override func awakeFromNib() {
         super.awakeFromNib()
     }
+    
 
     
     /*

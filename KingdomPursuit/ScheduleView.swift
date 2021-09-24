@@ -16,9 +16,9 @@ class ScheduleView: UIViewController, UIScrollViewDelegate {
     let thursTimes = ["3:00pm", "6:00pm", "6:30pm"]
     let thursEvents = ["Registration opens", "Auditorium opens", "Session 1: Tom Crandall"]
     let friTimes = ["8:50am - 9:30am", "9:30am", "9:45am", "11:45am", "1:30pm", "2:45pm - 4:00pm", "4:00pm - 6:00pm", "5:30pm", "6:00pm", "6:30pm",]
-    let friEvents = ["(doors close at 9am) Corporate prayer in auditorium - all are welcome","Auditorium opens","Session 2: Van Cochrane","Supernatural Lifestyle Luncheon ($25, pre-registration required)","Session 3 - Wilson Cochrane","Breakout sessions (see breakouts tab)", "Dinner Break","Atrium opens","Auditorium opens","Session 4 - UPPERROOM / Stacey Campbell"]
+    let friEvents = ["Corporate prayer in auditorium - all are welcome (doors close at 9am)","Auditorium opens","Session 2: Van Cochrane","Supernatural Lifestyle Luncheon ($25, pre-registration required)","Session 3 - Wilson Cochrane","Breakout sessions (see breakouts tab)", "Dinner Break","Atrium opens","Auditorium opens","Session 4 - UPPERROOM / Stacey Campbell"]
     let satTimes = ["8:50am - 9:30am", "9:30am", "9:45am", "12:00pm - 1:00pm", "1:00pm - 5:00pm", "1:30pm", "2:45pm - 4:00pm", "4:00pm - 6:00pm", "5:30pm", "6:00pm", "6:30pm"]
-    let satEvents = ["(doors close at 9am) Corporate prayer in auditorium - all are welcome","Auditorium opens","Session 5: Steve Backlund","Lunch break","Prophecy tents (pre-registration required","Session 6 - Luke Haselmayer","Breakout sessions (see breakouts tab","Dinner break","Atrium opens","Auditorium opens","Session 7: UPPERROOM / Steve Backlund"]
+    let satEvents = ["Corporate prayer in auditorium - all are welcome (doors close at 9am)","Auditorium opens","Session 5: Steve Backlund","Lunch break","Prophecy tents (pre-registration required)","Session 6 - Luke Haselmayer","Breakout sessions (see breakouts tab)","Dinner break","Atrium opens","Auditorium opens","Session 7: UPPERROOM / Steve Backlund"]
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,7 +55,7 @@ class ScheduleView: UIViewController, UIScrollViewDelegate {
     }
     
     func setupSlideScrollView(slides : [ScheduleSlide]) {
-            scrollView.frame = CGRect(x: 0, y: 200, width: view.frame.width, height: view.frame.height)
+            scrollView.frame = CGRect(x: 0, y: 180, width: view.frame.width, height: view.frame.height)
             scrollView.contentSize = CGSize(width: view.frame.width * CGFloat(slides.count), height: view.frame.height)
             scrollView.isPagingEnabled = true
             
